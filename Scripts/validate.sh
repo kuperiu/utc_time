@@ -1,4 +1,4 @@
-curl --fail  http://localhost:8080/hello
+curl --fail  http://localhost:8090/
 if [ $? -ne 0 ]; then
     exit 1
 fi
