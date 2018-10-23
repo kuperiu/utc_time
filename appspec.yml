@@ -15,7 +15,7 @@ hooks:
       runas: root
     - location: Scripts/elb/start_httpd.sh
       runas: root
-    - location: Scripts/register_with_elb.sh
+    - location: Scripts/elb/register_with_elb.sh
   ValidateService:
     - location: Scripts/validate.sh
       timeout: 60
