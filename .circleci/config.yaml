@@ -1,0 +1,18 @@
+version: 2.1
+
+working_directory: &working_directory
+  ~/project
+
+executors:
+  default:
+    docker:
+      - image: java:openjdk-8-jre-alpine
+
+jobs:
+  build:
+    executor: default
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: cd /project && ./mvnw package
